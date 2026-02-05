@@ -19,7 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Fahrenheit:"
+        android:text="@string/fahrenheit"
         app:layout_constraintEnd_toStartOf="@+id/guideline21"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Celsius:"
+        android:text="@string/celsius"
         app:layout_constraintEnd_toStartOf="@+id/guideline21"
         app:layout_constraintTop_toBottomOf="@+id/tvFahrenheit" />
 
@@ -38,9 +38,11 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number|numberDecimal"
+        android:minHeight="48dp"
         android:textSize="14sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/tvFahrenheit"
-        app:layout_constraintStart_toStartOf="@+id/guideline21" />
+        app:layout_constraintStart_toStartOf="@+id/guideline21"
+        tools:ignore="LabelFor" />
 
     <EditText
         android:id="@+id/etCelsius"
@@ -48,6 +50,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number|numberDecimal"
+        android:minHeight="48dp"
         android:textSize="14sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/tvCelsius"
         app:layout_constraintStart_toStartOf="@+id/guideline21" />
@@ -58,7 +61,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:onClick="onClickConvert"
-        android:text="Convert"
+        android:text="@string/convert"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvCelsius" />
